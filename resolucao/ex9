@@ -1,0 +1,25 @@
+inicio
+inteiro chegada, aceleracao, tempo
+real velocidadeAtual, velocidadeInicial
+
+Classe Carro:
+    Atributos:
+        - Posicao
+
+    Metodo construtor(posicao):
+        Define a posicao em que o carro deve comecar no trajeto
+
+    Metodo acelerar():
+        velocidadeAtual = velocidadeInicial
+        tempo = 0
+        enquanto velocidadeAtual <= 100 e posicao <= chegada:
+            posicao += velocidadeAtual
+            velocidadeAtual += aceleracao
+            tempo += 1
+
+tesla = novo Carro(0)
+chegada = 300
+se tesla posicao <= chegada:
+    tesla acelerar()
+escreva("Demorou ", tempo)
+fim

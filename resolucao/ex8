@@ -1,0 +1,36 @@
+Classe FormaGeometrica:
+    Atributos:
+        - cor
+
+    Método Construtor(cor):
+        Define o valor do atributo cor com o valor passado como parâmetro.
+
+    Método CalcularArea():
+        # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
+
+Classe Retangulo herda FormaGeometrica:
+    Atributos herdados:
+        - cor
+
+    Atributos:
+        - altura
+        - largura
+    
+    Método construtor(cor, altura, largura):
+        Define os atributos cor, altura e largura do retangulo como parametro.
+    
+    Método calcularArea():
+        retorna altura * largura
+
+Classe Circulo herda FormaGeometrica:
+    Atributos herdados:
+        - cor
+
+    Atributos:
+        - raio
+    
+    Método construtor(cor, raio):
+        Define os atributos cor, raio do circulo como parametro.
+    
+    Método calcularArea():
+        retorna 3.14 * raio**2
