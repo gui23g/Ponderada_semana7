@@ -121,15 +121,7 @@ if (numero % 2 === 0) {
 
  Qual das seguintes alternativas é a descrição mais precisa do que o código faz?
 
-
-A) O código verifica se o número é divisível por 3 e, se for, exibe a mensagem "O número é divisível por 3!".
-
-B) O código verifica se o número é par ou ímpar. Se for par, exibe a mensagem "O número é par!". Se for ímpar, exibe a mensagem "O número é ímpar!".
-
-C) O código verifica se o número é par, ímpar ou divisível por 3. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3, exibe a mensagem "O número é divisível por 3!". Se for ímpar, exibe a mensagem "O número é ímpar e não é divisível por 3!".
-
 D) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".
-
 
 ______
 
@@ -158,40 +150,6 @@ for (var i = 0; i < valorCompras.length; i++) {
 
 Escolha a opção que responde corretamente:
 
-A)
-Compra 1 aprovada. Saldo restante: 800
-
-Compra 2 aprovada com limite de crédito. Saldo restante: 700
-
-Compra 3 aprovada. Saldo restante: 400
-
-Compra 4 aprovada com limite de crédito. Saldo restante: 0
-
-Compra 5 aprovada. Saldo restante: -200
-
-
-B)
-Compra 1 aprovada. Saldo restante: 800
-
-Compra 2 aprovada com limite de crédito. Saldo restante: 700
-
-Compra 3 aprovada. Saldo restante: 200
-
-Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
-
-Compra 5 negada. Saldo insuficiente e limite de crédito excedido.
-
-
-C)
-Compra 1 aprovada. Saldo restante: 800
-
-Compra 2 aprovada com limite de crédito. Saldo restante: 700
-
-Compra 3 aprovada. Saldo restante: 400
-
-Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
-
-
 D)
 
 Compra 1 aprovada. Saldo restante: 800
@@ -204,32 +162,23 @@ Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
 
 Compra 5 negada. Saldo insuficiente e limite de crédito excedido.
 
+![Uma imagem](assets/ex4.png)
+
 ______
 
 **5)** Qual é o principal ciclo de vida de um jogo em Phaser.js?
 
 Escolha a opção que responde corretamente:
 
-A) Setup -> Update -> Draw
-
 B) Preload -> Create -> Update
 
-C) Load -> Initialize -> Render
-
-D) Begin -> Play -> End
 ______
 
 **6)** Qual é o objetivo principal do módulo Arcade Physics em Phaser.js?
 
 Escolha a opção que responde corretamente:
 
-A) Renderizar gráficos 3D para jogos em HTML5.
-
 B) Simular interações físicas realistas, como colisões e movimentos, em jogos 2D.
-
-C) Criar efeitos de áudio para melhorar a experiência do usuário em jogos.
-
-D) Gerenciar a lógica do jogo e a sincronização de eventos em jogos multiplayer.
 
 ______
 
@@ -237,6 +186,28 @@ ______
 
 **7)** Implemente o pseudocódigo para o algoritmo representado no fluxograma da imagem.
 ![Uma imagem](assets/image.png)
+
+Resposta:
+
+```
+inicio
+inteiro idade
+
+escreva("Insira sua idade")
+leia(idade)
+
+se idade < 16:
+    escreva("Não pode votar!")
+
+senao:
+    se idade >= 16 e idade < 18:
+        escreva("Voto facultativo!")
+    senao:
+        escreva("Voto obrigatório")
+
+fim
+```
+
 ______
 
 **8)** Considere a implementação da classe base FormaGeometrica em um sistema de modelagem de formas geométricas. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Retangulo e Circulo, que herdam da classe FormaGeometrica, adicionando atributos específicos e métodos para calcular a área de um retângulo e de um círculo, respectivamente.
@@ -252,6 +223,47 @@ Classe FormaGeometrica:
     Método CalcularArea():
         # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
 
+```
+
+Resposta:
+
+```
+Classe FormaGeometrica:
+    Atributos:
+        - cor
+
+    Método Construtor(cor):
+        Define o valor do atributo cor com o valor passado como parâmetro.
+
+    Método CalcularArea():
+        # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
+
+Classe Retangulo herda FormaGeometrica:
+    Atributos herdados:
+        - cor
+
+    Atributos:
+        - altura
+        - largura
+    
+    Método construtor(cor, altura, largura):
+        Define os atributos cor, altura e largura do retangulo como parametro.
+    
+    Método calcularArea():
+        retorna altura * largura
+
+Classe Circulo herda FormaGeometrica:
+    Atributos herdados:
+        - cor
+
+    Atributos:
+        - raio
+    
+    Método construtor(cor, raio):
+        Define os atributos cor, raio do circulo como parametro.
+    
+    Método calcularArea():
+        retorna 3.14 * raio**2
 ```
 
 ______
