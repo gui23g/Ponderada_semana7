@@ -1,0 +1,12 @@
+inicio
+matriz1 = [[1,1,1], [1,2,3], [3,2,1]]
+matriz2 = [[2,2,2], [3,2,1], [1,3,2]]
+resultado = []
+
+para (i = 0; i < tamanho da matriz1; i = i+1):
+    para (j = 0; j < tamanho da matriz1; j = j+1):
+        para (k = 0; k < tamanho da matriz1; k = k+1):
+            resultado[i][j] += matriz1[i][k] * matriz2[k][j]
+
+escreva(resultado)
+fim

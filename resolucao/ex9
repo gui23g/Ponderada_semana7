@@ -12,14 +12,16 @@ Classe Carro:
     Metodo acelerar():
         velocidadeAtual = velocidadeInicial
         tempo = 0
-        enquanto velocidadeAtual <= 100 e posicao <= chegada:
+        enquanto posicao <= chegada e tempo < 10:
             posicao += velocidadeAtual
-            velocidadeAtual += aceleracao
-            tempo += 1
+            se velocidadeAtual <= 100 <= chegada:
+                velocidadeAtual += aceleracao
+                tempo += 1
 
 tesla = novo Carro(0)
 chegada = 300
-se tesla posicao <= chegada:
-    tesla acelerar()
+velocidadeInicial = 10
+aceleracao = 5
+tesla acelerar
 escreva("Demorou ", tempo)
 fim
