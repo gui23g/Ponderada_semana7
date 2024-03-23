@@ -275,6 +275,38 @@ Considere a fórumla de atualização velocidade:
     velocidade = velocidadeInicial + aceleracao*tempo
 ```
 
+Resposta:
+
+```
+inicio
+inteiro chegada, aceleracao, tempo
+real velocidadeAtual, velocidadeInicial
+
+Classe Carro:
+    Atributos:
+        - Posicao
+
+    Metodo construtor(posicao):
+        Define a posicao em que o carro deve comecar no trajeto
+
+    Metodo acelerar():
+        velocidadeAtual = velocidadeInicial
+        tempo = 0
+        enquanto posicao <= chegada e tempo < 10:
+            posicao += velocidadeAtual
+            se velocidadeAtual <= 100 <= chegada:
+                velocidadeAtual += aceleracao
+                tempo += 1
+
+tesla = novo Carro(0)
+chegada = 300
+velocidadeInicial = 10
+aceleracao = 5
+tesla acelerar
+escreva("Demorou ", tempo)
+fim
+```
+
 ______
 
 **10)** Uma matriz é uma coleção bidimensional de elementos, organizados em linhas e colunas. A seguir, é fornecida a implementação da função SomaDeMatrizes(matrizA, matrizB), que calcula a soma de duas matrizes. Sua tarefa é implementar uma função semelhante, porém que realize a multiplicação de duas matrizes.
@@ -303,4 +335,21 @@ matrizB <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
 matrizSoma <- SomaDeMatrizes(matrizA, matrizB)
 Escrever("Soma das matrizes:")
 ImprimirMatriz(matrizSoma)
+```
+
+Resposta:
+
+```
+inicio
+matriz1 = [[1,1,1], [1,2,3], [3,2,1]]
+matriz2 = [[2,2,2], [3,2,1], [1,3,2]]
+resultado = []
+
+para (i = 0; i < tamanho da matriz1; i = i+1):
+    para (j = 0; j < tamanho da matriz1; j = j+1):
+        para (k = 0; k < tamanho da matriz1; k = k+1):
+            resultado[i][j] += matriz1[i][k] * matriz2[k][j]
+
+escreva(resultado)
+fim
 ```
